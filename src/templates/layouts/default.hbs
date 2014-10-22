@@ -16,6 +16,7 @@
 		<script src="js/jquery.scrolly.min.js"></script>
 		<script src="js/skel.min.js"></script>
 		<script src="js/init.js"></script>
+    <script src="js/contact-form.js"></script>
 		<noscript>
 			<link rel="stylesheet" href="css/skel.css" />
 			<link rel="stylesheet" href="css/style.css" />
@@ -26,17 +27,9 @@
 		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
 	</head>
 	<body>
+    {{> main-header}}
+
     {{> body}}
-		<!-- Header -->
-			<section id="header" class="dark">
-				<header>
-          <h1>{{title}}</h1>
-          <p>{{lead}}</p>
-				</header>
-				<footer>
-          <a href="#first" class="button scrolly">{{cta}}</a>
-				</footer>
-			</section>
 
 		<!-- First -->
 			<section id="first" class="main">
@@ -211,10 +204,10 @@
 				</header>
 				<div class="content style4 featured">
 					<div class="container small">
-						<form method="post" action="#">
+						<form method="post" class="contact-form" data-action-path="http://forms.brace.io/chrislim@theotech.org">
 							<div class="row half">
-								<div class="6u"><input type="text" placeholder="Name" /></div>
-								<div class="6u"><input type="text" placeholder="Email" /></div>
+								<div class="6u"><input type="text" name="name" placeholder="Name" /></div>
+								<div class="6u"><input type="text" name="email" placeholder="Email" /></div>
 							</div>
 							<div class="row half">
 								<div class="12u"><textarea name="message" placeholder="Message"></textarea></div>
