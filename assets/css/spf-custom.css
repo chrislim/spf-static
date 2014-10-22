@@ -4,7 +4,8 @@
   height:100%;
   border-radius:0.5em;
   text-align: center;
-  padding: 2em;
+  padding: 1.9em;
+  background-size: cover;
 }
 
 .step-info label {
@@ -15,4 +16,11 @@
 .step-icon
 {
   font-size:4em;
+}
+
+.step-header
+{
+  text-align: center;
+  margin-bottom: 0;
+  font-weight: bold;
 }
